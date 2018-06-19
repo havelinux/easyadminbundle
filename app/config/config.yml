@@ -78,10 +78,13 @@ stof_doctrine_extensions:
         default:
             sluggable: true
 
-# app/config/config.yml
 easy_admin:
+    site_name: Aqua<i>Note</i>
+    design:
+        brand_color: '#81b9ba'
+    assets:
+        css: ['css/custom_backend.css']
     entities:
-        # change the following to the namespaces of your own entities
         - AppBundle\Entity\Genus
         - AppBundle\Entity\GenusNote
         - AppBundle\Entity\SubFamily
