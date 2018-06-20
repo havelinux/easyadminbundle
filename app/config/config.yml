@@ -84,6 +84,9 @@ easy_admin:
         brand_color: '#81b9ba'
         templates:
             field_id: 'admin/fields/_id.html.twig'
+        form_theme:
+            - horizontal
+            - easy_admin/_form_theme.html.twig
     assets:
         css: ['css/custom_backend.css']
         js:
@@ -128,12 +131,10 @@ easy_admin:
                     - { property: 'subFamily', type: 'easyadmin_autocomplete' }
                     -
                         property: 'genusScientists'
-                        type: 'collection'
+                        type: 'text'
                         type_options:
-                            entry_type: AppBundle\Form\GenusScientistEmbeddedForm
-                            allow_delete: true
-                            allow_add: true
-                            by_reference: false
+                            mapped: false
+                            attr: { class: 'js-genus-scientists-field' }
             new:
                 fields:
                     - '-id'
