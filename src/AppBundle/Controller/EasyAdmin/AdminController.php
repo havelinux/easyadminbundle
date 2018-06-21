@@ -6,4 +6,10 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AdminController as BaseAdminContr
 
 class AdminController extends BaseAdminController
 {
+
+  public function exportAction()
+  {
+    throw new \RuntimeException('Action for exporting an entity not defined');
+  }
+
 }

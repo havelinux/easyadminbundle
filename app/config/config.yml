@@ -94,7 +94,7 @@ easy_admin:
             - 'js/custom_backend.js'
     list:
         title: 'List %%entity_label%%'
-        actions: ['show']
+        actions: ['show', 'export']
     entities:
         Genus:
             class: AppBundle\Entity\Genus
